@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1 style="user-select: none;">Bruh AI</h1>
+  </header>
+  <div class="enteringamessage">
+
+    <!-- <input type="file" class="inputfile" name="image" accept="image/*" id="inputfile">
+    <label for="inputfile">
+      <svg xmlns="http://www.w3.org/2000/svg" style="fill: #ddd" viewBox="0 0 16 16" width="16" height="16">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M6.958 2.03a3.957 3.957 0 0 1 5.596 5.597l-3.18 3.18a2.502 2.502 0 1 1-3.538-3.539l2.877-2.876 1.414 1.414-2.876 2.877a.502.502 0 1 0 .71.71l3.179-3.18a1.957 1.957 0 0 0-2.768-2.769L5.106 6.711a3.392 3.392 0 1 0 4.796 4.796l.534-.534 1.415 1.414-.535.534a5.392 5.392 0 1 1-7.625-7.625L6.958 2.03Z">
+        </path>
+      </svg>
+    </label> -->
+
+    <input class="inputtext" type="text" placeholder="напишите сообщение..." />
+    <svg viewBox="0 0 24 24" style="fill: #ddd">
+      <path 
+        transform="translate(-4 -4)" 
+        data-testid="oknyx-arrow" 
+        fill-rule="evenodd" 
+        clip-rule="evenodd"
+        d="M17.0001 11.8005L22.6001 17.4005L24.0001 16.0005L16.0001 8.00049L8.00006 16.0005L9.40006 17.4005L15.0001 11.8005L15.0001 24.0005L17.0001 24.0005L17.0001 11.8005Z" 
+        fill="white">
+      </path>
+    </svg>
+    
+  </div>
+
+  <div class="panel">
+    <h1>Параметры ИИ</h1>
+    <div class="modelmenu">
+      <p>Выберите модель:</p>
+      <div class="model">
+        <select name="states">
+          <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>
+          <option value="gpt-4">gpt-4</option>
+          <option value="qwen/qwen2.5-vl-72b-instruct:free">qwen-2.5</option>
+          <option value="opengvlab/internvl3-14b:free">internvl3</option>
+          <option value="google/gemma-3-1b-it:free">gemma-3-1b-it:free</option>
+          <option value="google/gemma-3-27b-it:free" selected>gemma-3-27b-it:free</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="promptmenu">
+      <p>Системный промпт:</p>
+      <div class="prompt">
+        <textarea id="promptinput" placeholder="Промпт"></textarea>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="messages">
+      <div class="message">
+        <div class="aimessage">
+          <p>Привет, чем могу помочь? </p>
+        </div>
+      </div>
+      <!-- <div class="message">
+          <div class="usermessage">
+            <p>Привdasdsaddsadsahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhет</p>
+          </div>
+        </div> -->
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
